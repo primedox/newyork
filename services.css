@@ -1,0 +1,313 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6200ee;
+}
+
+.button {
+    background-color: #bb86fc;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+    background-color: #6200ee;
+    transform: translateY(-2px);
+}
+
+/* Header (можно импортировать из style.css, если необходимо) */
+header {
+    background-color: rgba(18, 18, 18, 0.95);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(18, 18, 18, 1);
+}
+
+.logo img {
+    max-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin-left: 25px;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+nav ul.menu li a:hover {
+    color: #bb86fc;
+    transform: translateY(-2px);
+}
+
+nav ul.menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bb86fc;
+    transition: width 0.3s ease;
+}
+
+nav ul.menu li a:hover::before {
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.burger-menu:hover {
+    transform: rotate(90deg);
+}
+
+/* Services Section */
+.services {
+    background-color: #1e1e1e;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 2px solid #bb86fc;
+}
+
+.service {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #252525;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.service i {
+    font-size: 60px;
+    color: #bb86fc;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover i {
+    transform: rotate(360deg);
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service p {
+    color: #ddd;
+}
+
+/* Products Section */
+.products {
+    background-color: #252525;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.product-card {
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Модальное окно для продукта */
+.product-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.product-modal-content {
+    position: relative;
+    background-color: #252525;
+    margin: 10% auto;
+    padding: 40px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #fff;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.modal-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.modal-buy-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #bb86fc;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.modal-buy-button:hover {
+    background-color: #6200ee;
+    transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin: 20px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .product-modal-content {
+        margin: 20% auto;
+        padding: 30px;
+    }
+
+    .modal-title {
+        font-size: 1.8em;
+    }
+
+    .modal-description {
+        font-size: 1.1em;
+    }
+}

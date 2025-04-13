@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Связаться с нами</h2>
+        <p>Оставьте свои данные, и мы свяжемся с вами в ближайшее время.</p>
+        <form action="contact_telegram.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit" class="button">Отправить</button>
+        </form>
+    </section>
+    
+
+    <section class="contact-info">
+        <h2>Контактная информация</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Адрес: ул. Примерная, 123</p>
+        <p><i class="fas fa-phone"></i> Телефон: +7 (123) 456-78-90</p>
+        <p><i class="fas fa-envelope"></i> Email: info@example.com</p>
+        <div class="telegram-links">
+            <a href="https://t.me/ващ_бот" target="_blank"><img src="img/telegram-logo.svg"
+                    alt="Telegram Bot"><span>Telegram Bot</span></a>
+            <a href="https://t.me/ваш_канал" target="_blank"><img src="img/telegram-logo.svg"
+                    alt="Telegram Channel"><span>Telegram Channel</span></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Современный сайт</p>
+    </footer>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Код страницы -->
+
+    <footer>
+        <p>&copy; 2024 Современный сайт</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Важно, чтоб script.js был на каждой странице -->
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+
+
+</body>
+
+</html>

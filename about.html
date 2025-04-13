@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <h1>О нашей компании</h1>
+        <p>Мы - команда профессионалов, преданных созданию лучших цифровых решений для вашего бизнеса.
+            Наша страсть - инновации, и мы постоянно стремимся к совершенству.</p>
+        <div class="animated-banner">
+            <span>Инновации</span>
+            <span>Качество</span>
+            <span>Совершенство</span>
+        </div>
+    </section>
+
+    <section class="our-mission">
+        <h2>Наша миссия</h2>
+        <p>Наша миссия - помогать бизнесу расти и развиваться в цифровом мире. Мы стремимся предоставлять
+            высококачественные услуги, которые отвечают потребностям наших клиентов и превосходят их ожидания.</p>
+        <div class="mission-visual">
+            <img src="img/mission.svg" alt="Наша миссия">
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Наша команда</h2>
+        <div class="team-member">
+            <img src="img/team1.jpg" alt="Фото сотрудника 1">
+            <h3>Иван Иванов</h3>
+            <p>CEO</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="img/team2.jpg" alt="Фото сотрудника 2">
+            <h3>Мария Петрова</h3>
+            <p>CTO</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-history">
+        <h2>История компании</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-year">2010</div>
+                <div class="timeline-content">Основание компании</div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-year">2015</div>
+                <div class="timeline-content">Первый крупный клиент</div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-content">Расширение команды и выход на новые рынки</div>
+            </div>
+        </div>
+    </section>
+    <section class="our-mission">
+        <h2>Наша миссия</h2>
+        <p>Наша миссия - помогать бизнесу расти и развиваться в цифровом мире. Мы стремимся предоставлять
+            высококачественные услуги, которые отвечают потребностям наших клиентов и превосходят их ожидания.</p>
+        <div class="mission-visual">
+            <img src="img/mission.svg" alt="Наша миссия">
+        </div>
+
+        <!-- Форма для отправки данных в Telegram -->
+        <div class="telegram-form">
+            <h3>Связаться с нами</h3>
+            <form id="telegram-form" action="telegram.php" method="POST">
+                <div class="form-group">
+                    <label for="company_name">Название компании:</label>
+                    <input type="text" id="company_name" name="company_name" required>
+                </div>
+                 <div class="form-group">
+                    <label for="industry">Отрасль:</label>
+                    <input type="text" id="industry" name="industry" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Современный сайт</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+
+</html>
+
+
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+
+</html>

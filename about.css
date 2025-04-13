@@ -1,0 +1,493 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6200ee;
+}
+
+/* Header (можно импортировать из style.css, если необходимо) */
+header {
+    background-color: rgba(18, 18, 18, 0.95);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(18, 18, 18, 1);
+}
+
+.logo img {
+    max-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin-left: 25px;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+nav ul.menu li a:hover {
+    color: #bb86fc;
+    transform: translateY(-2px);
+}
+
+nav ul.menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bb86fc;
+    transition: width 0.3s ease;
+}
+
+nav ul.menu li a:hover::before {
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.burger-menu:hover {
+    transform: rotate(90deg);
+}
+
+/* About Hero Section */
+.about-hero {
+    background-color: #1e1e1e;
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 2px solid #bb86fc;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.animated-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50px;
+}
+
+.animated-banner span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #bb86fc;
+    font-size: 1.5em;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Our Mission Section */
+.our-mission {
+    background-color: #252525;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 2px solid #bb86fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-mission h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.our-mission p {
+    font-size: 1.2em;
+    color: #ddd;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.mission-visual {
+    max-width: 500px;
+}
+
+.mission-visual img {
+    width: 100%;
+    height: auto;
+}
+
+/* Team Section */
+.team {
+    background-color: #1e1e1e;
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #bb86fc;
+}
+
+.team-member {
+    flex: 0 0 300px;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #252525;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.team-member p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #bb86fc;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #6200ee;
+}
+
+/* Company History Section */
+.company-history {
+    background-color: #252525;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 2px solid #bb86fc;
+}
+
+.company-history h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #333;
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-event:nth-child(odd) {
+    padding-right: 50%;
+}
+
+.timeline-event:nth-child(even) {
+    padding-left: 50%;
+}
+
+.timeline-year {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 30px;
+    background-color: #bb86fc;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: #ddd;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline-event:nth-child(odd) .timeline-content::before {
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #1e1e1e;
+}
+
+.timeline-event:nth-child(even) .timeline-content::before {
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #1e1e1e transparent transparent;
+}
+
+/* Footer (можно импортировать из style.css, если необходимо) */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #bb86fc;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  /* Сначала скрываем обычное меню */
+  nav ul.menu {
+    display: none;
+  }
+
+  /* Показываем иконку гамбургера */
+  .burger-menu {
+    display: block;
+  }
+
+  /* Стили для отображения меню в виде колонки */
+  nav ul.menu {
+    display: none; /* Скрываем меню по умолчанию на мобильных устройствах */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0; /* Изменено на right: 0 для лучшего отображения на мобильных */
+    width: 100%;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center; /* Центрирование текста в меню */
+  }
+
+  nav ul.menu li {
+    margin: 0;
+    padding: 12px;
+    border-bottom: 1px solid #333;
+  }
+
+  nav ul.menu li:last-child {
+    border-bottom: none;
+  }
+    .about-hero {
+        padding: 80px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .our-mission {
+        flex-direction: column;
+    }
+
+    .mission-visual {
+        max-width: 80%;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin: 20px 0;
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .timeline-event {
+        padding: 0;
+    }
+
+    .timeline-event:nth-child(odd),
+    .timeline-event:nth-child(even) {
+        padding: 0;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-event .timeline-year {
+        left: 10px;
+        transform: translateX(0);
+    }
+
+    .timeline-content {
+        margin-left: 40px;
+    }
+
+    .timeline-content::before {
+        top: 10px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #1e1e1e transparent transparent;
+    }
+}
+.telegram-form {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.telegram-form h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    box-sizing: border-box; /* Важно для правильной ширины с учетом padding */
+}
+
+.form-group textarea {
+    resize: vertical; /* Разрешить вертикальное изменение размера textarea */
+}
+
+.telegram-form button {
+    background-color: #bb86fc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.telegram-form button:hover {
+    background-color: #6200ee;
+}

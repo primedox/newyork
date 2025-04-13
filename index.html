@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главное меню</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Добро пожаловать на наш современный сайт!</h1>
+      <p>Мы предлагаем лучшие решения для вашего бизнеса.</p>
+      <a href="#" class="button" data-modal-target="#modal">Узнать больше</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/hero.jpg" alt="Hero Image">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-rocket"></i>
+      <h3>Быстрый запуск</h3>
+      <p>Моментальный старт вашего проекта.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-code"></i>
+      <h3>Чистый код</h3>
+      <p>Современные технологии и стандарты разработки.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-users"></i>
+      <h3>Поддержка 24/7</h3>
+      <p>Мы всегда готовы помочь вам.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Отзывы клиентов</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <p>"Отличная компания, рекомендую!"</p>
+        <cite>- Иван Иванов</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Быстро и качественно."</p>
+        <cite>- Мария Петрова</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Превосходный сервис и профессиональная команда."</p>
+        <cite>- Елена Смирнова</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Очень доволен результатом сотрудничества."</p>
+        <cite>- Алексей Кузнецов</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Современный сайт</p>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Подробная информация</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Здесь будет текст с подробной информацией о вашей компании и услугах. Вы можете добавить любую информацию,
+      которую считаете важной для ваших клиентов.
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

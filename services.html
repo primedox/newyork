@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h2>Наши услуги</h2>
+        <div class="service">
+            <i class="fas fa-code"></i>
+            <h3>Веб-разработка</h3>
+            <p>Создание современных и функциональных сайтов любой сложности.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Дизайн</h3>
+            <p>Разработка уникального дизайна для вашего бренда.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-chart-line"></i>
+            <h3>Маркетинг</h3>
+            <p>Продвижение вашего бизнеса в интернете.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Наши продукты</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="1">
+                <img src="img/product1.jpg" alt="Продукт 1">
+                <h3>Продукт 1</h3>
+            </div>
+            <div class="product-card" data-product-id="2">
+                <img src="img/product2.jpg" alt="Продукт 2">
+                <h3>Продукт 2</h3>
+            </div>
+            <div class="product-card" data-product-id="3">
+                <img src="img/product3.jpg" alt="Продукт 3">
+                <h3>Продукт 3</h3>
+            </div>
+            <div class="product-card" data-product-id="4">
+                <img src="img/product4.jpg" alt="Продукт 4">
+                <h3>Продукт 4</h3>
+            </div>
+            <div class="product-card" data-product-id="5">
+                <img src="img/hero.png" alt="Продукт 5">
+                <h3>Продукт 5</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для продукта -->
+    <div class="product-modal">
+        <div class="product-modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Продукт" class="modal-image">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+            <a href="#" class="button modal-buy-button">Купить в Telegram</a>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Код страницы -->
+
+    <footer>
+        <p>&copy; 2024 Современный сайт</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Важно, чтоб script.js был на каждой странице -->
+
+    <footer>
+        <p>&copy; 2024 Современный сайт</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>
